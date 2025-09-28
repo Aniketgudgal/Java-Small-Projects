@@ -1,7 +1,7 @@
 package VehicleApp;
 
 /*
- * 8. Vehicle Fuel Efficiency
+Vehicle Fuel Efficiency
 Task:
  Create a Vehicle class with fields: model, mileage, and fuelCapacity.
  In the main method:
