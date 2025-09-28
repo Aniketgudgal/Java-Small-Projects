@@ -14,3 +14,10 @@ Create a Vehicle object.
 Calculate how far the vehicle can travel (mileage * fuelCapacity) and print the result.
 Explanation:
  This reinforces using object fields for calculations.
+
+3. Product Discount Calculation
+Task:
+ Create a Product class with fields: name, price, and discountPercentage.
+ In the main method:
+Create a Product object.
+Calculate the discounted price and print the result.
