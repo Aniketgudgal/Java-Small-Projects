@@ -2,7 +2,7 @@ package ProductApp;
 import java.util.Scanner;
 class ProductInfo 
 {
-	Product[] p;
+	Product[] p; // set the product array of object reference
 	public void setProduct(Product[] p1)
 	{
 		p = p1;
