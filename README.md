@@ -21,3 +21,12 @@ Task:
  In the main method:
 Create a Product object.
 Calculate the discounted price and print the result.
+
+4. Bank Account Balance Update
+Task:
+ Create a BankAccount class with fields: accountHolderName and balance.
+ In the main method:
+Create a BankAccount object.
+Deposit an amount into the account and print the updated balance.
+Explanation:
+ This introduces updating object fields and performing logical operations.
