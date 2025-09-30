@@ -30,3 +30,10 @@ Create a BankAccount object.
 Deposit an amount into the account and print the updated balance.
 Explanation:
  This introduces updating object fields and performing logical operations.
+
+5. Create a POJO class Employee with fields: empId, name, basicSalary, hra, and da. Store details of 5 employees using an array of objects. Perform the following operations:
+Calculate the gross salary for each employee (gross = basic + hra + da).
+Find and display the employee with the maximum salary.
+Print the details of employees whose salary is greater than the average salary of all employees.
+Explanation:
+This covers aggregation + comparison + filtering. You’ll work with numerical calculations and finding max/average values.
