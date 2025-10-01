@@ -75,6 +75,7 @@ public class EmployeeInfo {
 		}
 		System.out.println();
 		System.out.println("The Employee name is: "+maxEmp.getName()+" and maximum salary of employee is: "+ max);
+		System.out.println();
 		}
 		else
 		{
@@ -92,7 +93,49 @@ public class EmployeeInfo {
 			}
 			System.out.println();
 			System.out.println("The Employee name is: "+maxEmp.getName()+" and maximum salary of employee is: "+ max);
+			System.out.println();
 		}
-		sc.close();
+	}
+	// only basic salary
+	public int getAvgSalary()
+	{
+		int salSum = 0;
+		for(int i = 0; i < emp.length; i++)
+		{
+			salSum += emp[i].getBasicSalary();
+		}
+		return (salSum/emp.length);
+	}
+	// get average salary with including hra and da
+	public int getAvgSalaryWithGross()
+	{
+		int salSum = 0;
+		for(int i = 0; i < emp.length; i++)
+		{
+			salSum += emp[i].getBasicSalary()+emp[i].getHra()+emp[i].getDa();
+		}
+		return (salSum/emp.length);
+	}
+	public void getGreaterThanAvgSal()
+	{
+		//salary is greater than the average salary of all employees
+		for(int i = 0; i < emp.length; i++)
+		{
+			if(emp[i].getBasicSalary() >= getAvgSalary())
+			{
+				System.out.println(emp[i].getName()+"\t" +emp[i].getBasicSalary());
+			}
+		}
+	}
+	public void getGreaterThanAvgGrossSal()
+	{
+		//salary is greater than the average salary of all employee with hra and da
+		for(int i = 0; i < emp.length; i++)
+		{
+			if(emp[i].getBasicSalary() >= getAvgSalaryWithGross())
+			{
+				System.out.println(emp[i].getName()+"\t" +emp[i].getBasicSalary());
+			}
+		}
 	}
 }
